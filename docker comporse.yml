@@ -1,0 +1,23 @@
+services:
+  app:
+    image: php:8.2-apache
+    ports:
+      - "8081:80"
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_USER: root
+      DB_PASSWORD: example
+      DB_NAME: usuariosdb
+    command: bash -c "docker-php-ext-install mysqli pdo pdo_mysql && apache2-foreground"
+
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: usuariosdb
+    ports:
+      - "3307:3306"
+
+
