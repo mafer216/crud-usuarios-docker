@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  color: #2f3640;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background: #273c75;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #0097e6;
+}
+
+.btn, button {
+  background: #44bd32;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.btn:hover, button:hover {
+  background: #4cd137;
+}
+
+.ok { color: green; }
+.error { color: red; }
